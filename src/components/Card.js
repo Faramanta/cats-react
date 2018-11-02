@@ -7,7 +7,7 @@ const Card = (props) => {
                  data-available={item.available}
                  key={item.id}
                  onMouseLeave={(e) => props.addHoverClass(item.id, e)}>
-                <a href="#" className="card " onClick={(e) => props.handleSelect(item.id, e)}>
+                <div className="card " onClick={(e) => props.handleSelect(item.id, e)}>
                     <div className="card__wrap">
                         <p className="card__product card__product--default">Сказочное заморское яство</p>
                         <p className="card__product card__product--hover">Котэ не одобряет?</p>
@@ -21,10 +21,8 @@ const Card = (props) => {
                             <p className="card-weight__sub">кг</p>
                         </div>
                     </div>
-                </a>
-                <p className="card__bot-text card__bot-text--default">Чего сидишь? Порадуй котэ, <a href="#"
-                                                                                                    className={`${item.selected ? 'selected' : ''}`}
-                                                                                                    onClick={(e) => props.handleSelect(item.id, e)}>купи</a>.
+                </div>
+                <p className="card__bot-text card__bot-text--default">Чего сидишь? Порадуй котэ, <span className={`${item.selected ? 'selected' : ''}`} onClick={(e) => props.handleSelect(item.id, e)}>купи</span>.
                 </p>
                 <p className="card__bot-text card__bot-text--selected">{item.decription}</p>
                 <p className="card__bot-text card__bot-text--disabled">Печалька, с курой закончился.</p>
