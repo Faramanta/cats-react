@@ -15,7 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Faramanta/cats-react.git"
   },
   "eslintConfig": {
     "extends": "react-app"
