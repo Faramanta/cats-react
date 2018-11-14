@@ -198,9 +198,10 @@ body *, html * {
   overflow: hidden;
   white-space: nowrap;
 }
-.card__bot-text a {
+.card__bot-text span {
   color: #1698d9;
   border-bottom: 1px dashed #1698d9;
+  cursor: pointer;
 }
 .card__block:hover .card  {
   background: -webkit-linear-gradient(315deg, transparent 30px, #2ea8e6 0);
