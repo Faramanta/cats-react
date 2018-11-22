@@ -4,6 +4,7 @@
   "private": false,
   "dependencies": {
     "react": "^16.6.0",
+    "react-app-polyfill": "^0.1.3",
     "react-dom": "^16.6.0",
     "react-scripts": "2.1.1"
   },
@@ -17,12 +18,11 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-
   "eslintConfig": {
     "extends": "react-app"
   },
   "author": "Kate Miniyanova",
-  "homepage": "https://faramanta.github.io/cats-react",
+  "homepage": "./",
   "browserslist": [
     ">0.2%",
     "not dead",

@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import Card from './components/Card';
 import products from './data/products';
+import 'core-js/fn/array/find';
 
 class App extends React.Component {
     state = {

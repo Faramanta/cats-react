@@ -90,6 +90,7 @@ body *, html * {
   padding: 4px;
   border-radius: 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 .card__wrap {
   position: relative;
@@ -199,10 +200,19 @@ body *, html * {
   white-space: nowrap;
 }
 .card__bot-text span {
+  position: relative;
   color: #1698d9;
-  border-bottom: 1px dashed #1698d9;
   cursor: pointer;
 }
+.card__bot-text span:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px dashed #1698d9;
+}
+
 .card__block:hover .card  {
   background: -webkit-linear-gradient(315deg, transparent 30px, #2ea8e6 0);
   background: -o-linear-gradient(315deg, transparent 30px, #2ea8e6 0);
