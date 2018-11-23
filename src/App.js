@@ -3,6 +3,11 @@ import './index.css';
 import Card from './components/Card';
 import products from './data/products';
 import 'core-js/fn/array/find';
+// import {isTablet} from 'react-device-detect';
+import {
+    TabletView,
+    isTablet
+} from 'react-device-detect';
 
 class App extends React.Component {
     state = {
@@ -52,7 +57,8 @@ class App extends React.Component {
                 <div className="page">
                     <div className="wrapper">
                         <h1 className="ttl1">Ты сегодня покормил кота?</h1>
-                        <div className="card-list">
+
+                        <div className={`${isTablet ? 'card-list card-list-tablet' : 'card-list'}` }>
                             <Card data={this.state.list} handleSelect = {this.handleSelect} addHoverClass = {this.addHoverClass}/>
                         </div>
                     </div>

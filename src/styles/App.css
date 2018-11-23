@@ -63,7 +63,7 @@ body *, html * {
   font-weight: 100;
 }
 .card-list {
-  margin-top: 23px;
+  margin: 23px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +79,12 @@ body *, html * {
   margin: 0 40px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+.card-list-tablet {
+  max-width: 800px;
+}
+.card-list-tablet .card__block {
+  width: calc(50% - 80px);
 }
 .card {
   display: block;
